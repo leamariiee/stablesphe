@@ -321,6 +321,7 @@
     display:grid;grid-template-columns:1.1fr 1fr;gap:var(--gap);
     align-items:start;
   }
+  .contact-panel-single{max-width:440px;}
   .contact-card{
     background:var(--creme);
     border:1px solid var(--panel-on-light-border);
@@ -329,7 +330,6 @@
   }
   .contact-card h3{font-size:1.15rem;margin-bottom:0.6rem;}
   .contact-card p{font-size:0.92rem;opacity:0.8;margin-bottom:1.6rem;font-weight:300;}
-  #calendly-inline-widget{min-width:280px;height:640px;border-radius:16px;overflow:hidden;border:1px solid var(--panel-on-light-border);}
 
   /* ---------- Feature detail modal ---------- */
   .modal-overlay{
@@ -677,15 +677,15 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">See It In Action</span>
-      <h2>The 45-seconds of success.</h2>
-      <p>The idea behind a smarter, more connected way to manage competitive horses, from health and training to competitions, travel, and team coordination.</p>
+      <h2>The 45-second pitch.</h2>
+      <p>The all-in-one platform designed to simplify competitive horse management by bringing health, training, competitions, travel, and collaboration into one connected system.</p>
     </div>
     <div class="video-frame reveal">
       <div class="ratio">
         <!-- Pitch video: https://youtu.be/mcRFBnRQA7E -->
         <iframe
           src="https://www.youtube.com/embed/mcRFBnRQA7E"
-          title="StableSphere — Everything your sport horse needs"
+          title="StableSphere — Pitch Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen>
         </iframe>
@@ -704,22 +704,12 @@
       <p>Book a short call to see StableSphere with your own horses, disciplines and stable team.</p>
     </div>
 
-    <div class="contact-panel reveal">
+    <div class="contact-panel reveal contact-panel-single">
       <div class="contact-card">
         <h3>Book directly</h3>
         <p>Pick a time that works for you — no back-and-forth emails.</p>
         <!-- Required by the assignment: a direct Calendly link -->
-        <a href="https://calendly.com/YOUR-LINK" class="btn btn-primary-light" target="_blank" rel="noopener">Book an appointment</a>
-      </div>
-
-      <div class="contact-card">
-        <h3>Prefer to see it inline?</h3>
-        <p>Paste your Calendly embed code into the widget below (Calendly → your event → “Add to Website” → Inline Embed).</p>
-        <!--
-          TODO: Replace YOUR-LINK with your real Calendly link, e.g. https://calendly.com/jane-doe/demo
-          and uncomment the Calendly widget script at the bottom of the page.
-        -->
-        <div id="calendly-inline-widget" data-url="https://calendly.com/YOUR-LINK?hide_event_type_details=1"></div>
+        <a href="https://calendly.com/leha00011-htw-saar/stablesphere" class="btn btn-primary-light" target="_blank" rel="noopener">Book an appointment</a>
       </div>
     </div>
   </div>
@@ -751,11 +741,6 @@
     </div>
   </div>
 </footer>
-
-<!-- Optional: Calendly's own widget script for the inline embed above.
-     Uncomment once you've set your real Calendly link in #calendly-inline-widget.
-<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
--->
 
 <!-- ============ FEATURE DETAIL MODAL ============ -->
 <div class="modal-overlay" id="featureModal" aria-hidden="true">
